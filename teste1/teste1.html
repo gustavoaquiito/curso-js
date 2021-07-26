@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>países</title>
+</head>
+<body>
+    <h1>identificação</h1>
+    Identificação De Nacionalidade<input type="text" name="txt1" id="txt1">
+    <input type="button" value="Verificar" onclick="clin()">
+    <div id=res>
+
+    </div>
+    <script>
+        function clin() {
+            var txt = window.document.querySelector('input#txt1')
+            var res = window.document.querySelector('div#res')
+            var vel = (txt.value)
+            if (vel == 'Brasil') {
+                res.innerHTML = `A sua nacionalidade é <strong>brasileira</strong>!`
+            } else {
+                res.innerHTML = `A sua nacionalidade é <strong>Estrangeiro</strong>`
+            }
+        }
+    </script>
+</body>
+</html>
